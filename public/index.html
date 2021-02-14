@@ -15,87 +15,43 @@
     <!-- initialize the SDK after all desired features are loaded -->
     <script defer src="/__/firebase/init.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <style>
-        video {background-color: powderblue;}
-    </style>
+    <link rel="stylesheet" type="text/css" href="newMain.css">
 </head>
-<body color="gray">
-<h1>Welcome to class :D</h1>
-<button onclick="googleLogin()">
-    Login with Google
-</button>
-<script src="login.js"></script>
+<body>
+<h1>Welcome to FirebaseRTC!</h1>
 
-<div class="top">
-    <div class="slide" id="teacher">
-        <img height="600" width="800" id="localVideo" src="slideExample.jpg" />
-    </div>
-
-    <div class="btn-group" id="buttons">
-        <button class="mdc-button mdc-button--raised" id="cameraBtn">
-            <i class="material-icons mdc-button__icon" aria-hidden="true">perm_camera_mic</i>
-            <span class="mdc-button__label">Open camera & microphone</span>
-        </button>
-        <button class="mdc-button mdc-button--raised" disabled id="createBtn">
-            <i class="material-icons mdc-button__icon" aria-hidden="true">group_add</i>
-            <span class="mdc-button__label">Create room</span>
-        </button>
-        <button class="mdc-button mdc-button--raised" disabled id="joinBtn">
-            <i class="material-icons mdc-button__icon" aria-hidden="true">group</i>
-            <span class="mdc-button__label">Join room</span>
-        </button>
-        <button class="mdc-button mdc-button--raised" disabled id="hangupBtn">
-            <i class="material-icons mdc-button__icon" aria-hidden="true">close</i>
-            <span class="mdc-button__label">Hangup</span>
-        </button>
-    </div>
-
-    <div class="hostVid" id="teacher">
-        <video height="160" width="210" id="localVideo" muted autoplay playsinline></video>
-    </div>
-
+<div class="slide" id="teacher">
+    <img height="600" width="800" id="pic" src="slideExample.jpg" />
 </div>
 
-<div class="bottom">
-    <div class="grid-container">
-        <video class="grid-item" height="100" width="100" id="localVideo"  muted autoplay playsinline></video>
-        <video class="grid-item" height="100" width="100" id="localVideo"  muted autoplay playsinline></video>
-        <video class="grid-item" height="100" width="100" id="localVideo"  muted autoplay playsinline></video>
-        <video class="grid-item" height="100" width="100" id="localVideo"  muted autoplay playsinline></video>
-        <video class="grid-item" height="100" width="100" id="localVideo"  muted autoplay playsinline></video>
-        <video class="grid-item" height="100" width="100" id="localVideo"  muted autoplay playsinline></video>
-        <video class="grid-item" height="100" width="100" id="localVideo"  muted autoplay playsinline></video>
-        <video class="grid-item" height="100" width="100" id="localVideo"  muted autoplay playsinline></video>
-        <video class="grid-item" height="100" width="100" id="localVideo"  muted autoplay playsinline></video>
-        <video class="grid-item" height="100" width="100" id="localVideo"  muted autoplay playsinline></video>
-        <video class="grid-item" height="100" width="100" id="localVideo"  muted autoplay playsinline></video>
-        <video class="grid-item" height="100" width="100" id="localVideo"  muted autoplay playsinline></video>
-        <video class="grid-item" height="100" width="100" id="localVideo"  muted autoplay playsinline></video>
-        <video class="grid-item" height="100" width="100" id="localVideo"  muted autoplay playsinline></video>
-        <video class="grid-item" height="100" width="100" id="localVideo"  muted autoplay playsinline></video>
-        <video class="grid-item" height="100" width="100" id="localVideo"  muted autoplay playsinline></video>
-      </div>
+<div class="btn-group" id="buttons">
+    <button class="mdc-button mdc-button--raised" id="cameraBtn">
+        <i class="material-icons mdc-button__icon" aria-hidden="true">perm_camera_mic</i>
+        <span class="mdc-button__label">Open camera & microphone</span>
+    </button>
+    <button class="mdc-button mdc-button--raised" disabled id="createBtn">
+        <i class="material-icons mdc-button__icon" aria-hidden="true">group_add</i>
+        <span class="mdc-button__label">Create room</span>
+    </button>
+    <button class="mdc-button mdc-button--raised" disabled id="joinBtn">
+        <i class="material-icons mdc-button__icon" aria-hidden="true">group</i>
+        <span class="mdc-button__label">Join room</span>
+    </button>
+    <button class="mdc-button mdc-button--raised" disabled id="hangupBtn">
+        <i class="material-icons mdc-button__icon" aria-hidden="true">close</i>
+        <span class="mdc-button__label">Hangup</span>
+    </button>
 </div>
 
-<ul class="mdc-image-list my-image-list">
-    <li class="mdc-image-list__item">
-      <div class="mdc-image-list__image-aspect-container">
-        <video class="grid-item" height="100" width="100" id="localVideo"  muted autoplay playsinline></video>
-      </div>
-      <div class="mdc-image-list__supporting">
-        <span class="mdc-image-list__label">Text label</span>
-      </div>
-    </li>
-
-  </ul>
-
+<div id="videos">
+    <video id="localVideo" muted autoplay playsinline></video>
+    <video id="remoteVideo" autoplay playsinline></video>
+</div>
 
 
 <div>
     <span id="currentRoom"></span>
 </div>
-
 
 <div class="mdc-dialog"
      id="room-dialog"
@@ -127,7 +83,6 @@
     </div>
     <div class="mdc-dialog__scrim"></div>
 </div>
-
 <script src="app.js"></script>
 </body>
 </html>
