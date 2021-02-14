@@ -1,156 +1,120 @@
 body {
-    background: #ECEFF1;
-    color: rgba(0, 0, 0, 0.87);
-    font-family: Roboto, Helvetica, Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  background: #ECEFF1;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 #message {
-    background: white;
-    max-width: 360px;
-    margin: 100px auto 16px;
-    padding: 32px 24px;
-    border-radius: 3px;
+  background: white;
+  max-width: 360px;
+  margin: 100px auto 16px;
+  padding: 32px 24px;
+  border-radius: 3px;
 }
 
 #message h2 {
-    color: #ffa100;
-    font-weight: bold;
-    font-size: 16px;
-    margin: 0 0 8px;
+  color: #ffa100;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0 0 8px;
 }
 
 #message h1 {
-    font-size: 22px;
-    font-weight: 300;
-    color: rgba(0, 0, 0, 0.6);
-    margin: 0 0 16px;
+  font-size: 22px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 0 0 16px;
 }
 
 #message p {
-    line-height: 140%;
-    margin: 16px 0 24px;
-    font-size: 14px;
+  line-height: 140%;
+  margin: 16px 0 24px;
+  font-size: 14px;
 }
 
 #message a {
-    display: block;
-    text-align: center;
-    background: #039be5;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: white;
-    padding: 16px;
-    border-radius: 4px;
+  display: block;
+  text-align: center;
+  background: #039be5;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  padding: 16px;
+  border-radius: 4px;
 }
 
 #message, #message a {
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 #load {
-    color: rgba(0, 0, 0, 0.4);
-    text-align: center;
-    font-size: 13px;
+  color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  font-size: 13px;
 }
 
 @media (max-width: 600px) {
-    body, #message {
-        margin-top: 0;
-        background: white;
-        box-shadow: none;
-    }
+  body, #message {
+      margin-top: 0;
+      background: white;
+      box-shadow: none;
+  }
 
-    body {
-        border-top: 16px solid #ffa100;
-    }
+  body {
+      border-top: 16px solid #ffa100;
+  }
 }
 
 body {
-    margin: 1em;
-    background-color: lightgray;
+  margin: 1em;
 }
 
 button {
-    margin: 0.2em 0.1em;
+  margin: 0.2em 0.1em;
 }
 
 .btn-group button {
-    background-color: #4CAF50; /* Green background */
-    border: 1px solid green; /* Green border */
-    color: white; /* White text */
-    padding: 10px 24px; /* Some padding */
-    cursor: pointer; /* Pointer/hand icon */
-    width: 25%; /* Set a width if needed */
-    height: 60px;
-    display: block; /* Make the buttons appear below each other */
-  }
-  
-  .btn-group button:not(:last-child) {
-    border-bottom: none; /* Prevent double borders */
-  }
-  
-  /* Add a background color on hover */
-  .btn-group button:hover {
-    background-color: #3e8e41;
-  }
-
-  .hostVid {
-    margin-top: 50px;
-    margin-bottom: 200px;
-    margin-right: 50px;
-    margin-left: 50px;
-    position: relative;
-    left: 70px;
-  }
-
-  .guestVid {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-right: 25px;
-    margin-left: 50px;
-    position: relative;
-    left: 70px;
-  }
-
-  .top {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-right: 50px;
-    margin-left: 50px;
-  }
-  .bottom {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-right: 50px;
-    margin-left: 50px;
-  }
-
-  .topComp {
-    float: left;
-  }
-
-  .slide {
-    margin-top: 0px;
-    margin-bottom: 25px;
-    margin-right: 50px;
-    margin-left: 50px;
-    float: left;
-  }
-
-  .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto;
-    /*background-color: #2196F3;*/
-    padding: 10px;
-    margin-right: 50px;
-    margin-left: 50px;
+  background-color: #4CAF50; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 25%; /* Set a width if needed */
+  height: 60px;
+  display: block; /* Make the buttons appear below each other */
+  left: 1000px;
+  bottom: 100px;
 }
-  .grid-item {
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    margin-top: 10px;
-    text-align: center;
-  }
+
+.btn-group button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+
+div#videos {
+  float: right;
+  margin-right: 100px;
+}
+
+div#videos > video {
+  background: lightblue;
+  height: 200px;
+  height: 100%;
+  display: block;
+  margin: 1em;
+}
+
+video#localVideos > video {
+  background: blue;
+  height: 200px;
+  height: 100%;
+  display: block;
+  margin: 1em;
+}
+
+.slide {
+  height: 200px;
+  width: 200px;
+}
