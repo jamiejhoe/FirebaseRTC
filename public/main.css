@@ -75,19 +75,46 @@ button {
     margin: 0.2em 0.1em;
 }
 
+.btn-group button {
+    background-color: #4CAF50; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 25%; /* Set a width if needed */
+    height: 60px;
+    display: block; /* Make the buttons appear below each other */
+    left: 1000px;
+    bottom: 100px;
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+  }
+
+
 div#videos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    float: right;
+    margin-right: 100px;
 }
 
 div#videos > video {
-    background: black;
+    background: lightblue;
     height: 200px;
     height: 100%;
     display: block;
     margin: 1em;
 }
 
+video#localVideos > video {
+    background: blue;
+    height: 200px;
+    height: 100%;
+    display: block;
+    margin: 1em;
+}
 
-<link rel="stylesheet" type="text/css" href="main.css">
+.slide {
+    height: 200px;
+    width: 200px;
+}
