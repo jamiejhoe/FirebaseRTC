@@ -1,5 +1,3 @@
-import * as firebase from 'firebase';
-
 document.addEventListener("DOMContentLoaded", event => {
     const app = firebase.app();
 });
