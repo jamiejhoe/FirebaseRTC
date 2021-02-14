@@ -13,18 +13,17 @@
     <!-- include only the Firebase features as you need -->
     <script defer src="/__/firebase/7.13.1/firebase-firestore.js"></script>
     <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
+    <script defer src='/__/firebase/init.js?useEmulator=true'></script>
+
+    <script type="module" src="login.js"></script>
 
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
 <h1>Welcome to FirebaseRTC!</h1>
 
-<script src="login.js">
-</script>
-
-<button onclick="googleLogin()">
-    Login with Google
+<button @click="googleLogin()">
+  Login with Google
 </button>
 
 <div class="slide" id="teacher">
